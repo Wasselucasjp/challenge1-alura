@@ -1,4 +1,5 @@
 package com.alura.api.controller;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -29,6 +30,11 @@ public class VideosContoller {
     @PutMapping("/videos/{id}")
     public String upadateVideo(@PathVariable String id){
         return "video atualizado";
+    }
+
+    @DeleteMapping("/videos/{id}")
+    public String deleteVideoById(@PathVariable String id){
+        return "Video deletado por id";
     }
 
 }
