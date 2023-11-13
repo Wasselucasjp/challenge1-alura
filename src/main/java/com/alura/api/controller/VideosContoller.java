@@ -12,7 +12,10 @@ public class VideosContoller {
         return "Aqui exibe todos os videos";
     }
 
-   
 
+    @GetMapping("/videos/{id}")
+    public String getVideoById(){
+        return "Aqui exibe um video por id";
+    }
 
 }
