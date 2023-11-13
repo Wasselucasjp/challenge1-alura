@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class VideosContoller {
 
-    @GetMapping("/")
+    @GetMapping("/videos")
     public String  getAll(){
         return "Aqui exibe todos os videos";
     }
