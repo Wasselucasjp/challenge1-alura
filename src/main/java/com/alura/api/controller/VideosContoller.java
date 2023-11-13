@@ -1,5 +1,6 @@
 package com.alura.api.controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,6 +17,11 @@ public class VideosContoller {
     @GetMapping("/videos/{id}")
     public String getVideoById(){
         return "Aqui exibe um video por id";
+    }
+
+    @PostMapping("/videos")
+    public String createVideo(String newVideo) {
+        return "Criando video";
     }
 
 }
